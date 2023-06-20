@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*  Dark Mode  */
+  .dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .container {
+   position: relative;
+   top: 80px;
+   text-align: center;
+
+  }
+
+  .container i{
+    margin: 0 auto;
+
+    color: yellow;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+/*  Header  */
+.contenido-header {
+   background-color: #0f0f0f;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 0 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;  
+}
+
+.contenido-header #opciones ul {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.contenido-header #opciones ul li {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.contenido-header #opciones ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contenido header {
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 90px;
+    top: 0;
+}
+
+.contenido header .contenido-header {
+    max-width: 1100px;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.contenido-header h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #ff5080;
+    font-size: 2.5em;
+    padding-left: 10px;
+}
+
+.contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.contenido header .contenido-header nav ul li a:hover {
+    color: #ff5080;
+}
+
+.contenido header .contenido-header nav ul li .selected {
+    color: #ff5080;
+}
+
+.contenido header .contenido-header nav ul li .selected:hover {
+    color: #fff;
+}
+
+/*  Inicion  */
+#home {
+    max-width: 100vw;
+    height: fit-content
+}
+#home .presentacion { 
+    color: #3c3535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(213, 12, 35, 0.178) 1%, rgba(1, 0, 46, 0.103) 52%, rgba(7, 108, 202, 0.709) 100%);
+    background-size: cover;
+    background-position: center center;
+    background-size: 400% 300%;
+    animation: bgGradient 5s ease infinite;
+}
+
+@keyframes bgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#home .presentacion img {
+    width: 15%;
+    border-radius: 100%;
+    margin-top: 80px;
+}
+
+#home .presentacion .bienvenida {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#home .presentacion h2 {
+    font-size: 30px;
+    text-align: center;
+    max-width: 700px;
+    margin-top: 0;
+}
+
+#home .presentacion h2 span {
+    display: block;
+    color: #f80a49;
+    max-width: 700px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#home .presentacion .descripcion {
+    text-align: center;
+    margin: 10px 100px;
+    font-size: 25px
+}
+
+#home .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 2px solid #1e1717;
+    border-radius: 25px;
+    color: #1e1717;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#home .presentacion a:hover {
+    background-color: #ff5080;
+}
+
+/*  Contacto  */
+#contacs {
+    width: 100%;
+    height: 500px;
+    padding: 70px;
+    background-image: linear-gradient(rgba(175, 89, 158, 0.3), rgba(235, 110, 110, 0.5)), url("./imagenes/OIP.jpg");
+    background-size: cover;
+}
+
+#contacs .title {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contacs p {
+    text-align: center;
+    margin: 60px 100px;
+    font-size: 25px
+}
+
+#contacs p .front {
+    color: #f80a49;
+}
+
+/*  Footer  */
+footer {
+    background-color: #af599e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    height: 90px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 26px;
+}
+
+footer a:hover {
+    color: #ff5080;
+}
+
+
+/* responsive section*/
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        padding: 5px 0;
+    }
+
+    #home div .contenido .presentacion .descripcion {
+        text-align: center;
+        margin: 30px auto;
+        font-size: 20px
+    }
+
+    #home div .contenido-header {
+        display: flex;
+        height: 80;
+    }
+
+    #home div nav .responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    #home div nav .responsive ul li {
+        margin: 5px 0;
+    }
+
+    #home .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    #contacs {
+        min-width: 100wh;
+        max-height: 100hw;
+        padding: 30px 0 0 5px;
+    }
+
+    #contacs h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    #contacs p {
+        text-align: center;
+        margin: 30px;
+        font-size: 25px;
+        color: #f80a49;
+    }
+
+
+    footer {
+        min-width: 100vw;
+        height: 50px;
+        text-align: center;
+        color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+}
