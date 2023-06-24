@@ -1,7 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -11,120 +8,100 @@ html {
 
 
 /*  Dark Mode  */
-  .dark-mode {
+.dark-mode {
     background-color: #000000;
     color: #ffffff;
-  }
-  
-  .container {
-   position: relative;
-   top: 80px;
-   text-align: center;
+} 
 
-  }
+.container {
+    position: relative;
+    top: 120px;
+    left: 0;
+    margin-left: 25px
+}
 
-  .container i{
-    margin: 0 auto;
+.container i {
+    color: yellow;   
+}
 
-    color: yellow;
-  }
-  
-  button {
+button {
     background-color: transparent;
     border: none;
     font-size: 24px;
     cursor: pointer;
-  }
-  
-/*  Header  */
+}
+
+/* responsive section*/
+
+nav.responsive {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 5px 0;
+}
+
+/*  Header */
 .contenido-header {
-   background-color: #0f0f0f;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   padding: 0 15px;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0;  
-}
-
-.contenido-header #opciones ul {
     display: flex;
-    justify-content: space-between;    
-}
-
-.contenido-header #opciones ul li {
-    text-decoration: none;
-    font-size: 25px;
-}
-
-.contenido-header #opciones ul li a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.contenido header {
-    background-color: rgba(0, 0, 0);
+    justify-items: center;
+    align-items: center;
+    background-color: #0f0f0f;
+    height: 95px;
+    padding: 0 15px;
     position: fixed;
     width: 100%;
     z-index: 100;
-    height: 90px;
     top: 0;
 }
 
-.contenido header .contenido-header {
-    max-width: 1100px;
-    height: 90px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    align-items: center;
+.contenido-header ul {
+    display: flex !important;
+    text-align: center;
 }
 
-.contenido-header h1 {
-    font-family: "Montserrat", sans-serif;
-    color: #ff5080;
-    font-size: 2.5em;
-    padding-left: 10px;
-}
+.contenido-header ul li {
 
-.contenido header .contenido-header nav ul {
-    list-style: none;
-    display: flex;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.contenido header .contenido-header nav ul li a {
     text-decoration: none;
-    font-size: 20px;
+}
+
+.contenido-header ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
     color: #fff;
     margin: 0 12px;
     font-weight: 400;
     transition: 0.5s;
 }
 
-.contenido header .contenido-header nav ul li a:hover {
+.contenido-header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contenido-header ul li a:hover {
     color: #ff5080;
 }
 
-.contenido header .contenido-header nav ul li .selected {
+.contenido-header ul li a .selected {
     color: #ff5080;
 }
 
-.contenido header .contenido-header nav ul li .selected:hover {
+.contenido-header ul li a .selected:hover {
     color: #fff;
 }
 
-/*  Inicion  */
-#home {
-    max-width: 100vw;
-    height: fit-content
+.contenido-header h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #ff5080;
+    font-size: 2em;
+    padding: 0 10px;
+
 }
-#home .presentacion { 
-    color: #3c3535;
+
+/*  Main */
+#home .presentacion {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,28 +127,35 @@ html {
     }
 }
 
-#home .presentacion img {
-    width: 15%;
-    border-radius: 100%;
-    margin-top: 80px;
+#home .presentacion .foto {
+    display: flex;
+    justify-content: center;
 }
 
-#home .presentacion .bienvenida {
+#home .presentacion .foto img {
+    width: 70%;
+    border-radius: 100%;
+    margin-top: 90px;
+}
+
+#home .presentacion .inicio .bienvenida {
     font-size: 35px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 8px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
+    padding-top: 4px;
 }
 
-#home .presentacion h2 {
+#home .presentacion .inicio h2 {
     font-size: 30px;
     text-align: center;
     max-width: 700px;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
-#home .presentacion h2 span {
+#home .presentacion .inicio h2 span {
     display: block;
     color: #f80a49;
     max-width: 700px;
@@ -179,147 +163,206 @@ html {
     text-align: center;
 }
 
-#home .presentacion .descripcion {
+#home .presentacion .inicio .descripcion {
     text-align: center;
-    margin: 10px 100px;
-    font-size: 25px
+    margin: 15px;
+    padding: 1em;
+    font-size: 30px;
+    line-height: 30px;
 }
 
-#home .presentacion a {
+#home .presentacion .inicio .cv {
+    display: flex;
+    justify-content: center;
+}
+
+#home .presentacion .inicio .cv a {
     text-decoration: none;
     display: inline-block;
-    padding: 10px 15px;
+    font-size: 25px;
     margin-bottom: 10px;
-    border: 2px solid #1e1717;
+    padding: 10px 20px;
+    border: 2px solid;
     border-radius: 25px;
-    color: #1e1717;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.5s;
+    color: #000000;
+   
 }
-
-#home .presentacion a:hover {
+#home .presentacion .inicio .cv a:hover {
     background-color: #ff5080;
 }
 
 /*  Contacto  */
 #contacs {
-    width: 100%;
-    height: 500px;
-    padding: 70px;
-    background-image: linear-gradient(rgba(175, 89, 158, 0.3), rgba(235, 110, 110, 0.5)), url("./imagenes/OIP.jpg");
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: linear-gradient(rgba(175, 89, 158, 0.3), rgba(235, 110, 110, 0.5));
     background-size: cover;
 }
 
 #contacs .title {
-    margin-top: 35px;
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    color: #0f0f0f;
+    padding-top: 30px;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
 
 #contacs p {
-    text-align: center;
-    margin: 60px 100px;
-    font-size: 25px
+    text-align: center;    
+    font-size: 25px;
+    line-height: 30px;
+    padding: 1.3em 1em;
+    margin-top: 1.2em;
 }
 
 #contacs p .front {
     color: #f80a49;
+    
 }
 
 /*  Footer  */
 footer {
+    min-width: 100vw;
+    height: 50px;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     background-color: #af599e;
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    height: 90px;
+    height: 80px;
 }
 
 footer a {
     text-decoration: none;
-    color: #fff;
     display: inline-block;
     padding-left: 20px;
+    padding-top: 20px;
     font-size: 26px;
+    color: #000;
+}
+
+footer p {
+    font-size: 20px;
 }
 
 footer a:hover {
-    color: #ff5080;
+    color: #f80747;
 }
 
-
-/* responsive section*/
-@media only screen and (max-width: 600px) {
-    nav {
-        display: none;
-    }
-
-    nav.responsive {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 0;
-        padding: 5px 0;
-    }
-
-    #home div .contenido .presentacion .descripcion {
-        text-align: center;
-        margin: 30px auto;
-        font-size: 20px
-    }
-
-    #home div .contenido-header {
+@media only screen and (min-width: 1024px) {
+    /*  Header  */
+    .contenido-header {
         display: flex;
-        height: 80;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100vw;
+        height: 70px;
     }
 
-    #home div nav .responsive ul {
-        display: block !important;
-        text-align: center;
+    .contenido-header ul {
+        list-style: none;
+        display: flex;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
-    #home div nav .responsive ul li {
-        margin: 5px 0;
+    .contenido-header ul li {
+        text-decoration: none;
+        font-size: 14px;
     }
 
-    #home .contenido .presentacion h2 {
+    /*  Main  */
+    #home {
+        max-width: 100vw;
+    }
+    #home .presentacion {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        flex-direction: row;       
+        gap: 2em;
+    }
+
+    #home .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    #home .presentacion .foto {
+        width: 100%;
+        display: flex;
+        align-items: start; 
+        height: 100%;       
+    }
+    #home .presentacion .foto img{
+        border: 4px solid;
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 6em;
+    }
+
+    #home .presentacion .inicio .bienvenida {
+        font-size: 50px;
+        margin-top: 90px;
+    }
+
+    #home .presentacion .inicio h2 {
+        padding-top: 20px;
         font-size: 40px;
     }
 
-    #contacs {
-        min-width: 100wh;
-        max-height: 100hw;
-        padding: 30px 0 0 5px;
+    #home .presentacion .inicio h2 span {
+        font-size: 40px;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
     }
 
-    #contacs h3 {
+    #home .presentacion .inicio .descripcion {
+        margin: 0 20px;
+        padding: 10px 50px;
         font-size: 30px;
-        font-weight: 500;
+        line-height: 40px;
+    }
+
+    #home .presentacion .inicio .cv a {
+        margin-top: 25px;
+    }
+
+    #home .presentacion .inicio .cv a:hover {
+        background-color: #ff5080;
+    }
+
+    #contacs {
+        max-height: 100vh;  
+        min-width: 100vw;     
+    }
+
+    #contacs .title {
+        font-size: 45px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-top: 110px;
     }
 
     #contacs p {
-        text-align: center;
-        margin: 30px;
-        font-size: 25px;
-        color: #f80a49;
+        margin-top: 60px;
+        padding: 0 200px;
+        padding-bottom: 150px;
+        line-height: 40px;
     }
 
-
     footer {
-        min-width: 100vw;
-        height: 50px;
-        text-align: center;
-        color: aliceblue;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
+        max-width: 100vw;
     }
 }
