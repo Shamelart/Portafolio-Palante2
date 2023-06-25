@@ -29,7 +29,7 @@ cv.addEventListener('click', () => {
   }).then((result) => {
     /* Read more about handling dismissals below */
     if (result.dismiss === Swal.DismissReason.timer) {
-      window.open("./imagenes/87ec6318-87e2-4be1-832e-7295df6c0bda.jfif", '_blank').focus();
+      window.open("../imagenes/CV_Shamela200623.pdf", '_blank').focus();
     }
   })
 })
