@@ -83,7 +83,7 @@ nav.responsive {
     color: #ff5080;
 }
 
-.contenido-header ul li a .selected {
+.contenido-header ul li .selected {
     color: #ff5080;
 }
 
