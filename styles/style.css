@@ -14,8 +14,10 @@ html {
 } 
 
 .container {
+    width: fit-content;
     position: relative;
-    left:65px;
+    left: 5px;
+    top: -5px;
 }
 
 .container i {
@@ -254,9 +256,11 @@ footer a:hover {
 @media only screen and (min-width: 1024px) {
     /*  Header  */
     .container {
-        position: relative;
-        left: 680px;
-        top: -0.5px;
+        width: fit-content;
+        position: fixed;
+        left: 950px;
+        top: 25px;
+
     }
 
     .contenido-header {
@@ -320,7 +324,7 @@ footer a:hover {
 
     #home .presentacion .inicio .bienvenida {
         font-size: 50px;
-        margin-top: 90px;
+        margin-top: 110px;
     }
 
     #home .presentacion .inicio h2 {
@@ -343,7 +347,7 @@ footer a:hover {
     }
 
     #home .presentacion .inicio .cv a {
-        margin-top: 55px;
+        margin-top: 30px;
     }
 
     #home .presentacion .inicio .cv a:hover {
