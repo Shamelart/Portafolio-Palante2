@@ -225,7 +225,7 @@ nav.responsive {
 /*  Footer  */
 footer {
     min-width: 100vw;
-    height: 50px;    
+    height: 70px;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
