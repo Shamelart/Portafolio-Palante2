@@ -16,8 +16,8 @@ html {
 .container {
     width: fit-content;
     position: relative;
-    left: 5px;
-    top: -5px;
+    right: 30px;
+    bottom: 1em;
 }
 
 .container i {
@@ -36,7 +36,7 @@ button {
 nav.responsive {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 0.2em;
     right: 0;
     padding: 5px 0;
 }
@@ -69,7 +69,7 @@ nav.responsive {
     text-decoration: none;
     font-size: 1.5em;
     color: #fff;
-    margin: 0 12px;
+    margin: 15px;
     font-weight: 400;
     transition: 0.5s;
 }
@@ -94,7 +94,8 @@ nav.responsive {
 .contenido-header h1 {
     font-family: "Montserrat", sans-serif;
     color: #ff5080;
-    font-size: 2em;    
+    font-size: 2em;
+    padding-bottom: 1.2em;
 }
 
 /*  Main */
@@ -133,7 +134,7 @@ nav.responsive {
 #home .presentacion .foto img {
     width: 70%;
     border-radius: 100%;
-    margin-top: 90px;
+    margin-top: 7em;
 }
 
 #home .presentacion .inicio .bienvenida {
@@ -163,7 +164,6 @@ nav.responsive {
 
 #home .presentacion .inicio .descripcion {
     text-align: center;
-    margin: 15px;
     padding: 1em;
     font-size: 30px;
     line-height: 30px;
@@ -204,7 +204,7 @@ nav.responsive {
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    padding-top: 30px;
+    padding-top: 80px;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -215,7 +215,7 @@ nav.responsive {
     font-size: 25px;
     line-height: 30px;
     padding: 1.3em 1em;
-    margin-top: 1.2em;
+    
 }
 
 #contacs p .front {
