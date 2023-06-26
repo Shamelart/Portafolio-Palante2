@@ -36,7 +36,7 @@ button {
 nav.responsive {
     display: block;
     position: absolute;
-    top: 0.2em;
+    top: 0;
     right: 0;
     padding: 5px 0;
 }
@@ -67,7 +67,7 @@ nav.responsive {
 
 .contenido-header ul li a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #fff;
     margin: 15px;
     font-weight: 400;
@@ -165,7 +165,7 @@ nav.responsive {
 #home .presentacion .inicio .descripcion {
     text-align: center;
     padding: 1em;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
 }
 
@@ -177,7 +177,7 @@ nav.responsive {
 #home .presentacion .inicio .cv a {
     text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
     padding: 10px 20px;
     border: 2px solid;
@@ -212,7 +212,7 @@ nav.responsive {
 
 #contacs p {
     text-align: center;    
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     padding: 1.3em 1em;
     
