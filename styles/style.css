@@ -99,6 +99,10 @@ nav.responsive {
 }
 
 /*  Main */
+#home {
+    max-width: 100vw;
+}
+
 #home .presentacion {
     width: 100vw;
     display: flex;
@@ -198,6 +202,7 @@ nav.responsive {
     max-height: 100vh;
     background-image: linear-gradient(rgba(175, 89, 158, 0.3), rgba(235, 110, 110, 0.5));
     background-size: cover;
+    padding-top: 1em;
 }
 
 #contacs .title {
@@ -231,7 +236,7 @@ footer {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    background-color: #af599e;
+    background-color: #0f0f0f;
     text-align: center;
 }
 
@@ -239,13 +244,14 @@ footer a {
     text-decoration: none;
     display: inline-block;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
     font-size: 26px;
-    color: #000;
+    color: #fff;
 }
 
 footer p {
     font-size: 20px;
+    color: #fff;
 }
 
 footer a:hover {
@@ -290,9 +296,6 @@ footer a:hover {
     }
 
     /*  Main  */
-    #home {
-        max-width: 100vw;
-    }
     #home .presentacion {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -318,7 +321,7 @@ footer a:hover {
     #home .presentacion .foto img{
         border: 4px solid;
         width: 100%;
-        margin-top: 150px;
+        margin-top: 160px;
         margin-left: 6em;
     }
 
@@ -347,7 +350,7 @@ footer a:hover {
     }
 
     #home .presentacion .inicio .cv a {
-        margin-top: 30px;
+        margin: 40px 30px;
     }
 
     #home .presentacion .inicio .cv a:hover {
@@ -356,8 +359,7 @@ footer a:hover {
 
     /*  contacto */
     #contacs {
-        max-height: 100vh;  
-        min-width: 100vw;     
+        min-width: 100vw;   
     }
 
     #contacs .title {
@@ -366,6 +368,7 @@ footer a:hover {
         text-transform: uppercase;
         letter-spacing: 2px;
         padding-top: 110px;
+        
     }
 
     #contacs p {
