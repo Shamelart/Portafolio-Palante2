@@ -1,0 +1,199 @@
+/*  Main */
+#home {
+    max-width: 100vw;
+}
+
+#home .presentacion {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(213, 12, 35, 0.178) 1%, rgba(1, 0, 46, 0.103) 52%, rgba(7, 108, 202, 0.709) 100%);
+    background-size: cover;
+    background-position: center center;
+    background-size: 400% 300%;
+    animation: bgGradient 5s ease infinite;
+}
+
+@keyframes bgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#home .presentacion .foto {
+    display: flex;
+    justify-content: center;
+}
+
+#home .presentacion .foto img {
+    width: 70%;
+    border-radius: 100%;
+    margin-top: 8em;
+}
+
+#home .presentacion .inicio .bienvenida {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#home .presentacion .inicio h2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 30px;
+    margin-top: 1em; 
+}
+
+#home .presentacion .inicio h2 .front {
+    margin-top: 0.5em;
+    color: #f80a49;
+    font-size: 1em;    
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17ch;
+ 
+    animation: typing 3s steps(17),
+    blink 10s infinite step-end alternate;
+    overflow: hidden;
+}
+
+#home .presentacion .inicio .descripcion {
+    text-align: center;
+    padding: 0.5em;
+    margin: 2.5em 1.5em;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#home .presentacion .inicio .cv {
+    display: flex;
+    justify-content: center;
+}
+
+#home .presentacion .inicio .cv a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: black;
+    margin-bottom: 3em;
+}
+
+#home .presentacion .inicio .cv a:hover {
+    background-color: #ff5080;
+}
+
+@media (min-width: 768px) {
+    /*  main */
+    #home .presentacion .foto img {
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    #home .presentacion .inicio h2 {
+        font-size: 2em;
+        margin-top: 1em;
+        
+    }
+
+    #home .presentacion .inicio h2 span {
+        font-size: 2em;
+    }
+
+    #home .presentacion .inicio .descripcion {
+        margin: 0 30px;
+        padding: 30px 50px;
+        font-size: 1.8em;      
+    }
+
+    #home .presentacion .inicio .cv a {
+        margin: 60px 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+     /*  Main  */
+     #home {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home .presentacion {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    #home .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    #home .presentacion .foto {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        height: 100%;
+    }
+
+    #home .presentacion .foto img {
+        border: 4px solid;
+        width: 100%;
+        margin-top: 160px;
+        margin-left: 6em;
+    }
+
+    #home .presentacion .inicio .bienvenida {
+        font-size: 50px;
+        margin-top: 90px;
+    }
+
+    #home .presentacion .inicio h2 {
+        font-size: 40px;
+    }
+
+    #home .presentacion .inicio h2 span {
+        font-size: 40px;
+        
+    }
+
+    #home .presentacion .inicio .descripcion {
+        margin: 0 20px;
+        padding: 10px 110px;
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+
+    #home .presentacion .inicio .cv a {
+        margin: 20px 30px;
+        font-size: 2em;
+    }
+
+    #home .presentacion .inicio .cv a:hover {
+        background-color: #ff5080;
+    }
+}

@@ -1,0 +1,77 @@
+.contenido-header ul {
+    display: flex !important;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.contenido-header ul li {
+    text-decoration: none;
+}
+
+.contenido-header ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 15px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.contenido-header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contenido-header ul li a:hover {
+    color: #ff5080;
+}
+
+.contenido-header ul li .selected {
+    color: #ff5080;
+}
+
+.contenido-header ul li a .selected:hover {
+    color: #fff;
+}
+
+.contenido-header h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #ff5080;
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+@media (min-width: 768px) {
+
+    .contenido-header h1 {
+        margin-top: 0.2em;
+        margin-left: 1em;
+        font-size: 2em;
+    }
+
+    .contenido-header ul {
+        margin: 0.1em 2em;
+    }
+
+    .contenido-header ul li a {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contenido-header h1 {
+        font-size: 2em;
+        margin-bottom: 0.3em;
+        margin-left: 3em;
+    }
+
+    .contenido-header ul {
+        list-style: none;
+        display: flex;        
+    }
+
+    .contenido-header ul li a {
+        font-size: 1.7em;
+    }
+
+}
