@@ -1,6 +1,7 @@
 /*  Main */
 #home {
     max-width: 100vw;
+    max-height: 100vh;
 }
 
 #home .presentacion {
@@ -56,20 +57,28 @@
     flex-direction: column;
     justify-items: center;
     font-size: 30px;
-    margin-top: 1em; 
+    margin-top: 1em;
+    text-align: center;
 }
 
-#home .presentacion .inicio h2 .front {
+#home .presentacion .nombre {
+    display: flex;
+    justify-content: center;
+}
+
+#home .presentacion .front {
+    display: flex;
+    justify-content: center;
     margin-top: 0.5em;
     color: #f80a49;
-    font-size: 1em;    
+    font-size: 2em;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 17ch;
- 
-    animation: typing 3s steps(17),
-    blink 10s infinite step-end alternate;
-    overflow: hidden;
+    width: 100;
+    
+    animation: typing 3s steps(100);
+    blink .6s infinite alternate;
+    overflow: hidden;   
 }
 
 #home .presentacion .inicio .descripcion {
@@ -99,11 +108,17 @@
     margin-bottom: 3em;
 }
 
+.dark-mode .presentacion .inicio .cv .tag {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 #home .presentacion .inicio .cv a:hover {
     background-color: #ff5080;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+
     /*  main */
     #home .presentacion .foto img {
         width: 100%;
@@ -113,17 +128,16 @@
     #home .presentacion .inicio h2 {
         font-size: 2em;
         margin-top: 1em;
-        
     }
 
-    #home .presentacion .inicio h2 span {
-        font-size: 2em;
+    #home .presentacion .inicio .front {
+        font-size: 2em;       
     }
 
     #home .presentacion .inicio .descripcion {
         margin: 0 30px;
         padding: 30px 50px;
-        font-size: 1.8em;      
+        font-size: 1.8em;
     }
 
     #home .presentacion .inicio .cv a {
@@ -132,8 +146,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
-     /*  Main  */
-     #home {
+
+    /*  Main  */
+    #home {
         display: flex;
         justify-content: center;
     }
@@ -176,21 +191,24 @@
         font-size: 40px;
     }
 
-    #home .presentacion .inicio h2 span {
+    #home .presentacion .inicio .front {
         font-size: 40px;
-        
+        padding-left: 1em;
+        width: 20ch;
+
+        animation: typing 3s steps(20);
     }
 
     #home .presentacion .inicio .descripcion {
-        margin: 0 20px;
-        padding: 10px 110px;
+        margin: 0 30px;
+        padding: 10px 120px;
         font-size: 1.8em;
         line-height: 40px;
     }
 
     #home .presentacion .inicio .cv a {
-        margin: 20px 30px;
-        font-size: 2em;
+        margin: 2px 50px;
+        font-size: 1.5em;
     }
 
     #home .presentacion .inicio .cv a:hover {

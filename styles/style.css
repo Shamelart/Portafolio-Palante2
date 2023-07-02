@@ -11,9 +11,13 @@ html {
     background-color: #000000;
     color: #ffffff;
 }
+.dark-mode .tag {
+    background-color: #00000045 !important;
+    color: #ffffff !important;
+}
 
 .container {
-    width: fit-content;
+    width: min-content;
     position: relative;
     right: 30px;
 }
@@ -51,9 +55,9 @@ nav.responsive {
     top: 0;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .container {
-        right: 5em;
+        right: 12em;
         margin-top: 1em;
     }
 
@@ -68,9 +72,8 @@ nav.responsive {
 @media only screen and (min-width: 1200px) {
     /*  Header  */
     .container {
-        position: fixed;
-        left: 650px;
-        top: 10px;
+        bottom: 0.2em;
+        right: 7em;
     }
 
     button {

@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="./styles/reset.css">
 	<link rel="stylesheet" href="./styles/navbar.css">
 	<link rel="stylesheet" href="./styles/main.css">
+	<link rel="stylesheet" href="./styles/skill.css">
+	<link rel="stylesheet" href="./styles/proyects.css">
 	<link rel="stylesheet" href="./styles/contacto.css">
 	<link rel="stylesheet" href="./styles/footer.css">
 	<title>Personal Portfolio</title>
@@ -32,12 +34,15 @@
 			<nav id="nav" class="responsive">
 				<div class="navbar navbar-expand-sm navbar-dark">
 					<div class="container-fluid justify-content-end">
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#opciones">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="opciones">
 							<ul>
 								<li><a href="#home" class="selected">Inicio</a></li>
+								<li><a href="#skill">Habilidades</a></li>
+								<li><a href="#proyects">Proyectos</a></li>
 								<li><a href="#contacs">Contacto</a></li>
 							</ul>
 						</div>
@@ -58,7 +63,12 @@
 				</div>
 				<div class="inicio">
 					<p class="bienvenida">¡Hola!</p>
-					<h2>Soy Shamela Chadee <span class="front">Front-End Developer</span></h2>
+					<div class="nombre">
+						<h2>Soy Shamela Chadee</h2>
+					</div>
+					<div class="front">
+						<p>Front-End Developer</p>
+					</div>
 					<p class="descripcion">Bienvenidos a mi portafolio. Me considero una persona
 						dinámica, creativa y organizada. Me gusta el trabajo en equipo y los nuevos retos.
 						Siempre interesada en aprender cosas nuevas.
@@ -70,22 +80,93 @@
 			</div>
 		</section>
 
+		<section id="skill" class="skillsContainer">
+
+		</section>
+
+		<section id="proyects">
+			<h3 class="title">My Proyects</h3>
+			<div class="fila">
+				<div class="proyect">
+					<div class="overLay">
+						<img src="./imagenes/webDesing.jpg" alt="">
+						<div class="info">
+							<h4>Web Desing</h4>
+						</div>
+					</div>
+				</div>
+				<div class="proyect">
+					<div class="overLay">
+						<img src="./imagenes/proyectoJs.jpg" alt="">
+						<div class="info">
+							<h4>Carrito de Compra</h4>
+						</div>
+					</div>
+				</div>
+				<div class="proyect">
+					<div class="overLay">
+						<img src="./imagenes/Shameladas.jpg" alt="">
+						<div class="info">
+							<h4>Web Balance De Ingreos</h4>
+						</div>
+					</div>
+				</div>
+				<div class="proyect">
+					<div class="overLay">
+						<img src="./imagenes/landing.jpg" alt="">
+						<div class="info">
+							<h4>Landing page Desing</h4>
+						</div>
+					</div>
+				</div>
+				<div class="proyect">
+					<div class="overLay">
+						<img src="./imagenes/Marvel-App.jpg" alt="">
+						<div class="info">
+							<h4>Marve App</h4>
+						</div>
+					</div>
+				</div>
+				<div class="proyect">
+					<div class="overLay">
+						<img src="./imagenes/Encriptador.jpg" alt="">
+						<div class="info">
+							<h4>Web Encritador</h4>
+						</div>
+					</div>
+				</div>
+				<div class="proyect">
+					<div class="overLay">
+						<img src="./imagenes/Weather-App.jpg" alt="">
+						<div class="info">
+							<h4>Weather App</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 		<section id="contacs">
 			<h3 class="title">Hablemos!</h3>
-			<p>
-				Muchas gracias por visitar mi perfil y conocer un poco sobre mí. <br>
-				Me encanta el desarrollo <span class="front">FRONT-END</span> y toda la gama de posibilidades visuales
-				y dinámicas que podemos realizar.
+			<p class="contain">
+				Muchas gracias por visitar mi perfil y conocer un poco sobre mí.
+				Me encanta el desarrollo
+			</p>
+			<div class="aparience">
+				<h3 class="front2">FRONT-END<span>&#160;</span></h3>
+			</div>
+			<p class="contain">y toda la gama de posibilidades visuales y dinámicas que podemos realizar.<br>
 				Te invito a visitar mi redes sociales y bajar mi CV para conocer aún más mi trabajo.
 			</p>
-			</div>
 		</section>
 	</main>
 
 	<!-- Footer-->
 	<footer>
 		<div class="redes">
-			<a href="https://api.whatsapp.com/send?phone=+542617548707&text=Hola, Nececito mas informacion!" target="_blank">
+			<a href="https://api.whatsapp.com/send?phone=+542617548707&text=Hola, Nececito mas informacion!"
+				target="_blank">
 				<i class="fa-brands fa-whatsapp"></i></a>
 			<a href="https://linkedin.com/in/shamela-chadee/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 			<a href="https://github.com/shamelart" target="_blank"><i class="fa-brands fa-github"></i></a>

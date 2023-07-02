@@ -1,35 +1,121 @@
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
-const body = document.querySelector('body');
+/***** DOM *****/
+const $ = (element) => {
+  return document.querySelector(element);
+}
 
-const cv = document.querySelector('.cv');
+const $$ = (element) => {
+  return document.querySelectorAll(element);
+}
 
-darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  if (body.classList.contains('dark-mode')) {
-    darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-  } else {
-    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-  }
-});
+window.addEventListener("load", (e) => {
+  e.preventDefault();
 
-cv.addEventListener('click', () => {
-  let timerInterval
-  Swal.fire({
-    title: '¡Hey un momento por favor!',
-    html: 'Gracias por su interés.',
-    timer: 2000,
-    timerProgressBar: true,
-    didOpen: () => {
-      Swal.showLoading()
-    
-    },
-    willClose: () => {
-      clearInterval(timerInterval)
+  /***** Dark Mode *****/
+  const darkModeToggle = $('#dark-mode-toggle');
+  const body = $('body');
+
+  /***** DOM *****/
+  const cv = $('.cv');
+  const skill = $('#skill');
+  const skillsContainer = $('.skillsContainer');
+
+  darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+      darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+      darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
     }
-  }).then((result) => {
-    /* Read more about handling dismissals below */
-    if (result.dismiss === Swal.DismissReason.timer) {
-      window.open("imagenes/CV_Shamela200623.pdf", '_blank').focus();
-    }
+  });
+
+  cv.addEventListener('click', () => {
+    let timerInterval
+    Swal.fire({
+      title: '¡Hey un momento por favor!',
+      html: 'Gracias por su interés.',
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading()
+
+      },
+      willClose: () => {
+        clearInterval(timerInterval)
+      }
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        window.open("imagenes/CV_Shamela200623.pdf", '_blank').focus();
+      }
+    })
   })
+
+  skill.addEventListener('click', (e) => {
+    e.preventDefault();
+    skillsContainer.innerHTML = `
+    <h3>Habilidades</h3>
+			<div class="skllis">
+				<div class="skill">
+					<div class="info">
+						<p><span class="lista"></span>Html5</p>
+						<span class="porcentaje">90%</span>
+					</div>
+					<div class="barra">
+						<div id="html" class="barra-progreso1"></div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="info">
+						<p><span class="lista"></span>Css3</p>
+						<span class="porcentaje">90%</span>
+					</div>
+					<div class="barra">
+						<div id="css" class="barra-progreso2"></div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="info">
+						<p><span class="lista"></span>Javascript</p>
+						<span class="porcentaje">80%</span>
+					</div>
+					<div class="barra">
+						<div id="js" class="barra-progreso3"></div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="info">
+						<p><span class="lista"></span>Node js</p>
+						<span class="porcentaje">30%</span>
+					</div>
+					<div class="barra">
+						<div id="node" class="barra-progreso4"></div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="info">
+						<p><span class="lista"></span>React</p>
+						<span class="porcentaje">60%</span>
+					</div>
+					<div class="barra">
+						<div id="react" class="barra-progreso5"></div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="info">
+						<p><span class="lista"></span>Figma</p>
+						<span class="porcentaje">80%</span>
+					</div>
+					<div class="barra">
+						<div id="figma" class="barra-progreso6"></div>
+					</div>
+				</div>
+			</div>`
+  });
+
+
 })
