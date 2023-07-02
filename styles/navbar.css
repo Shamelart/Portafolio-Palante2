@@ -4,6 +4,7 @@
 .contenido-header ul {
     display: flex !important;
     margin-top: 1em;
+    flex-direction: ;
 }
 
 .contenido-header ul li {
