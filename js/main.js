@@ -18,6 +18,7 @@ window.addEventListener("load", (e) => {
   const cv = $('.cv');
   const skill = $('#skill');
   const skillsContainer = $('.skillsContainer');
+  const animado = $('.animado')
 
   darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
@@ -116,6 +117,18 @@ window.addEventListener("load", (e) => {
 				</div>
 			</div>`
   });
+
+  const mostrarScroll = () => {
+	let scrollTop = document.documentElement.scrollTop;
+	for (i = 0; 1 < animado.length; i++) {
+		let alturaAnimada = animado[i].offsetTop;
+		if (alturaAnimada = 500 < scrollTop) {
+			animado[i].style.opacity = 1;
+		}
+	}
+  }
+
+  window.addEventListener('scroll', mostrarScroll);
 
 
 })
