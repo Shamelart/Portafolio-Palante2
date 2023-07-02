@@ -1,11 +1,5 @@
-.skillsContainer .animado {
-    opacity:  0;
-    transition: .5s;
-}
-
-
 .skillsContainer {
-    background: linear-gradient(90deg, rgba(215, 53, 72, 0.183) 1%, rgba(1, 0, 46, 0.173) 52%, rgba(0, 132, 255, 0.254) 100%);
+    background: linear-gradient(90deg, rgba(141, 27, 40, 0.183) 1%, rgba(1, 0, 46, 0.458) 52%, rgba(0, 132, 255, 0.254) 100%);
     background-size: cover;
     background-position: center center;
     max-width: 100vw;
@@ -24,7 +18,7 @@
 }
 
 .skillsContainer .skllis {
-    padding-top: 2em;
+    padding-top: 2.5em;
 }
 
 .skillsContainer .skill {
@@ -163,13 +157,14 @@
     .skillsContainer .skill {
         max-width: 100vw;
         margin: 1.2em 5em;
-    }    
+    }
+    
 }
 
 @media only screen and (min-width: 1200px) {
     .skillsContainer .container {
         height: 100%;
-        padding-bottom: 20em 60em;
+        padding-bottom: 70em;
     }
 
     .skillsContainer h3 {
